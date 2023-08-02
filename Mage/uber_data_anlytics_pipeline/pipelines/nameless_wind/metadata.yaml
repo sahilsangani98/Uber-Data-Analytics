@@ -1,0 +1,65 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: null
+  downstream_blocks:
+  - uber_data_transformation
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: extract_uber_data
+  retry_config: null
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: extract_uber_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - load_uber_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: uber_data_transformation
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - extract_uber_data
+  uuid: uber_data_transformation
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_uber_data
+  retry_config: null
+  status: updated
+  type: data_exporter
+  upstream_blocks:
+  - uber_data_transformation
+  uuid: load_uber_data
+callbacks: []
+conditionals: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: nameless wind
+notification_config: {}
+retry_config: {}
+spark_config: {}
+tags: []
+type: python
+updated_at: '2023-08-02 17:19:32'
+uuid: nameless_wind
+widgets: []
