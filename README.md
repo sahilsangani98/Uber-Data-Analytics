@@ -36,4 +36,4 @@ https://lookerstudio.google.com/reporting/f327282a-ee3f-49f9-8e4f-76b6c2a5e301
 
 
 ## Reference  
-Darshil Parmar - https://www.linkedin.com/in/darshil-parmar/
+Darshil Parmar
